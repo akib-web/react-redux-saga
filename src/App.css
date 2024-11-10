@@ -1,0 +1,22 @@
+.product-container{
+  display: flex;
+  width: 100%;
+  row-gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-container .product-item{
+  flex-basis: calc(25% - 30px); 
+  width: calc(25% - 30px); 
+  background-color: darkgray;
+  padding: 10px;
+}
+.product-container .product-item .product-thumb {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.product-container .product-item img{
+  width: 100%;
+  height: auto;
+}

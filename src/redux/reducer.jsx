@@ -11,7 +11,7 @@ export const cartData = (data = [] , action) => {
     case CART_ACTIONS.TYPES.REMOVE_FROM_CART:
       console.warn('REMOVE_FROM_CART const is called',data);
       // Use slice to create a new array without mutating the original state const 
-      data = data.slice(0, data.length > 0 ? data.length - 1 : 0);
+      data = data.filter((item)=>item.id !== action.data);
       return [ ...data ];
 
     case CART_ACTIONS.TYPES.EMPTY_CART:

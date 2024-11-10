@@ -7,7 +7,7 @@
             "price": 15000,
             "category": "mobile",
             "brand": "Samsung",
-            "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "photo": "https://www.dummyimage.com/400x400/000/fff"
         },
         {
             "id": 2,
@@ -16,7 +16,7 @@
             "price": 50000,
             "category": "Mobile",
             "brand": "Samsung",
-            "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "photo": "https://www.dummyimage.com/400x400/000/fff"
         },
         {
             "id": 3,
@@ -25,7 +25,7 @@
             "price": 5000,
             "category": "cloths",
             "brand": "Nike",
-            "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "photo": "https://www.dummyimage.com/400x400/000/fff"
         },
         {
             "id": 4,
@@ -34,7 +34,7 @@
             "price": 8000,
             "category": "rebook",
             "brand": "Nike",
-            "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "photo": "https://www.dummyimage.com/400x400/000/fff"
         },
         {
             "id": 5,
@@ -43,7 +43,7 @@
             "price": 88000,
             "category": "laptop",
             "brand": "HP",
-            "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "photo": "https://www.dummyimage.com/400x400/000/fff"
         },
         {
             "id": 6,
@@ -52,7 +52,7 @@
             "price": 800,
             "category": "earphone",
             "brand": "mivi",
-            "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "photo": "https://www.dummyimage.com/400x400/000/fff"
         },
         {
             "id": 7,
@@ -61,7 +61,7 @@
             "price": 1800,
             "category": "cloths",
             "brand": "tommy",
-            "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "photo": "https://www.dummyimage.com/400x400/000/fff"
         },
         {
             "id": 8,
@@ -70,7 +70,7 @@
             "price": 1900,
             "category": "cloths",
             "brand": "tommy",
-            "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+            "photo": "https://www.dummyimage.com/400x400/000/fff"
         }
     ]
 }
