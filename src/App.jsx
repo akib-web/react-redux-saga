@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components';
-import {  useDispatch } from 'react-redux';
+import {  useDispatch, useSelector } from 'react-redux';
 import store from './redux/store';
-import { addToCart , removeFromCart , emptyCart } from './redux/action';
 import Header from './component/Header';
+import { addToCart, emptyCart, removeFromCart } from './redux/action';
+import { productList } from './redux/productAction';
 
 const Container = styled.div`
   width: 100vw;
@@ -33,8 +34,18 @@ const product = {
   color: 'red'
 }
 
+
 const App = () => {
   const dispatch = useDispatch();
+  const productData = useSelector((state)=>state.productData);
+  console.warn('productList', productData);
+
+  useEffect(() => {
+      fetch('https://dummyjson.com/products')
+      .then(res => res.json())
+      .then(console.log)
+  });
+
   return(
     <Container>
       <HeaderContainer>
@@ -44,6 +55,7 @@ const App = () => {
         <CartButton onClick={ () => {dispatch(addToCart(product))} }>Add To Cart</CartButton>
         <CartButton onClick={ () => {dispatch(removeFromCart(product))} }>Remove To Cart</CartButton>
         <CartButton onClick={ () => {dispatch(emptyCart(product))} }>Empty Cart</CartButton>
+        <CartButton onClick={ () => {dispatch(productList(product))} }>Get Product list</CartButton>
       </BodyContainer>
     </Container>
   )
