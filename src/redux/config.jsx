@@ -3,6 +3,9 @@ export const CART_ACTIONS = {
     ADD_TO_CART : "ADD_TO_CART",
     REMOVE_FROM_CART : "REMOVE_FROM_CART",
     EMPTY_CART : "EMPTY_CART",
-    PRODUCT_LIST : "PRODUCT_LIST"
+    PRODUCT_LIST : "PRODUCT_LIST",
+    SET_PRODUCT_LIST : "SET_PRODUCT_LIST"
   }
 };
+
+export const API_BASE_URL = 'http://localhost:3000';

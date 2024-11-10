@@ -5,6 +5,7 @@ import store from './redux/store';
 import Header from './component/Header';
 import { addToCart, emptyCart, removeFromCart } from './redux/action';
 import { productList } from './redux/productAction';
+import FancyText from './component/FancyText';
 
 const Container = styled.div`
   width: 100vw;
@@ -40,22 +41,24 @@ const App = () => {
   const productData = useSelector((state)=>state.productData);
   console.warn('productList', productData);
 
-  useEffect(() => {
-      fetch('https://dummyjson.com/products')
-      .then(res => res.json())
-      .then(console.log)
-  });
+  const getData = async () => {
+      let data = await fetch('https://dummyjson.com/products')
+      data = await data.json()
+      console.log(data)
+  };
 
   return(
     <Container>
       <HeaderContainer>
         <Header />
       </HeaderContainer>
+        <FancyText />
       <BodyContainer>
         <CartButton onClick={ () => {dispatch(addToCart(product))} }>Add To Cart</CartButton>
         <CartButton onClick={ () => {dispatch(removeFromCart(product))} }>Remove To Cart</CartButton>
         <CartButton onClick={ () => {dispatch(emptyCart(product))} }>Empty Cart</CartButton>
         <CartButton onClick={ () => {dispatch(productList(product))} }>Get Product list</CartButton>
+        <CartButton onClick={ () => {getData()} }>fetch Products</CartButton>
       </BodyContainer>
     </Container>
   )
